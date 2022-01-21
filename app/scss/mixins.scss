@@ -1,0 +1,27 @@
+@mixin box($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin font ($fz, $lh, $fw: null, $ff: $basic-family){
+    font: $fw #{$fz}/#{$lh} $ff;
+}
+
+//breakpoints
+@mixin mobile{
+    @media (max-width: $mobile){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (max-width: $tablet){
+        @content;
+    }
+}
+
+@mixin desctop{
+    @media (max-width: $desctop){
+        @content;
+    }
+}

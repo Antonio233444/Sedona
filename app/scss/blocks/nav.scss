@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     z-index: 5;
-    // display: none;
+    display: none;
 }
 
 
@@ -43,19 +43,58 @@
 
 .nav__link {
     display: block;
+    @include font(18px, 40px, 700);
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
-    color: #fff;
-    line-height: 40px;
-    font-weight: 700;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 9px;
 }
 
-// @media screen and(max-width: 500px) {//это образец,пока не удалять.Тут нужно будет поставить наоборот min-width,чтобы для планшета пункты меню меняли своё расположение
-//     .nav__link {
-//         color: red;
-//     }
-// }
+
+
+@media screen and(min-width: 768px) {
+    .nav{
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+    }
+
+    .nav__item {
+        margin-right: 50px;
+    }
+
+    .nav__item:last-child {
+        margin-right: 0;
+    }
+
+    .nav__list {
+        display: flex;
+    }
+
+    .nav__link {
+        color: #000;
+    }
+
+    .nav__item:not(:last-child)::before {
+        display: none;
+    }
+}
+
+
+@media screen and(min-width: 1020px) {
+    .nav__item {
+        margin-right: 100px;
+    }
+    
+    .nav__item:last-child {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and(min-width: 768px) {
+    .nav__list:after {
+        background: none;
+    }
+}
