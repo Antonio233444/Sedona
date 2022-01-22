@@ -1,5 +1,5 @@
 .nav {
-    background-color: #81B3D2;
+    background-color: $socials-bg;
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +57,7 @@
     .nav{
         display: flex;
         justify-content: center;
-        background-color: #fff;
+        background-color: $header-bg;
     }
 
     .nav__item {
@@ -73,7 +73,7 @@
     }
 
     .nav__link {
-        color: #000;
+        color: $title-color;
     }
 
     .nav__item:not(:last-child)::before {
