@@ -12,6 +12,26 @@
 </head>
 
 <body>
+  <picture>
+    <source media="(min-width: 415px)" srcset="img/Desktop.jpg">
+    <img class="test" src="img/Desktop.jpg" alt="">
+  </picture>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    .test {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 0;
+      transform: translateX(-50%);
+      opacity: .9;
+      pointer-events: none;
+      z-index: 1111;
+    }
+  </style>
   <header class="header">
     <div class="header__top">
       <div class="container header__container">
