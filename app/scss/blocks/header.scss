@@ -18,12 +18,10 @@
 }
 
 
-
-// .header__container {
-//     padding-top: 16px;
-//     padding-bottom: 14px;
-// }
-
+.header__container {
+    // padding-top: 16px;
+    // padding-bottom: 14px;
+}
 
 
 .header__logo {
@@ -32,6 +30,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    flex-shrink: 0;
 }
 
 @media screen and(min-width: 768px) {
