@@ -7,7 +7,23 @@
     position: relative;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
+    flex-shrink: 0;
 }
+
+@media screen and(min-width: 768px) {
+    .burger {
+        display: none;
+    }
+}
+
+
+@media screen and(min-width: 1200px) {
+    .burger {
+        display: none;
+    }
+}
+
 
 .header__burger {
     margin-left: auto;
