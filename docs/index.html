@@ -8,14 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1642958508985">
+  <link rel="stylesheet" href="css/main.css?t=1643295830013">
 </head>
 
 <body>
   <picture>
+    <source media="(min-width: 1200px)" srcset="img/Desktop.jpg">
     <source media="(min-width: 768px)" srcset="img/Tablet.jpg">
-    <source media="(min-width: 1024px)" srcset="img/Desktop.jpg">
-    <img class="test" src="img/Mobile.jpg" alt="">
+    <img class="test" src="img/Mobile.png" alt="">
   </picture>
   <style>
     body {
@@ -24,7 +24,7 @@
 
     .test {
       position: absolute;
-      top: -218px;
+      top: 0;
       left: 50%;
       right: 0;
       transform: translateX(-50%);
@@ -33,31 +33,33 @@
       z-index: 1111;
     }
   </style>
-  <header class="header">
-    <div class="header__top">
-      <div class="container header__container">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Фото и видео</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Форма отзыва</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">HTMLACADEMY</a></li>
-          </ul>
-        </nav>
-        <picture>
-          <source srcset="img/logo-desktop.svg" media="(min-width: 1024px)">
-          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-          <img src="img/logo-mobile.svg" alt="Logo" width="102" height="82" class="logo header__logo">
-        </picture>
-        <button type="button" class="burger header__burger" aria-label="Открыть меню">
-          <span class="burger__item"></span>
-          <span class="burger__item"></span>
-          <span class="burger__item"></span>
-        </button>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <div class="container header__container">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Фото и видео</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Форма отзыва</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">HTMLACADEMY</a></li>
+            </ul>
+          </nav>
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1024px)">
+            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+            <img src="img/logo-mobile.svg" alt="Logo" width="102" height="82" class="logo header__logo">
+          </picture>
+          <button type="button" class="burger header__burger" aria-label="Открыть меню">
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <script src="js/main.js?t=1642958508985"></script>
+    </header>
+  </div>
+  <script src="js/main.js?t=1643295830013"></script>
 </body>
 
 </html>
