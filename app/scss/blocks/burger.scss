@@ -27,6 +27,7 @@
 
 .header__burger {
     margin-left: auto;
+    padding-top: 53px;
 }
 
 
@@ -52,7 +53,7 @@
 
 .burger._active .burger__item {
     background-color: $primary-color;
-    z-index: 999;
+    z-index: 99;
     &:first-child {
         transform: translateY(0) rotate(45deg);
     }
