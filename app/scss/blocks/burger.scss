@@ -51,6 +51,8 @@
 }
 
 .burger._active .burger__item {
+    background-color: $primary-color;
+    z-index: 999;
     &:first-child {
         transform: translateY(0) rotate(45deg);
     }

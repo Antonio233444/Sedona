@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1643313404483">
+  <link rel="stylesheet" href="css/main.css?t=1643393046829">
 </head>
 
 <body>
-  <picture>
+  <!-- <picture>
     <source media="(min-width: 1200px)" srcset="img/Desktop.jpg">
     <source media="(min-width: 768px)" srcset="img/Tablet.jpg">
     <img class="test" src="img/Mobile.png" alt="">
@@ -32,12 +32,12 @@
       pointer-events: none;
       z-index: 1111;
     }
-  </style>
+  </style> -->
   <div class="wrapper">
     <header class="header">
       <div class="header__top">
         <div class="container header__container">
-          <nav class="nav">
+          <nav class="nav header__nav js-nav">
             <ul class="nav__list">
               <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
               <li class="nav__item"><a href="#" class="nav__link">Фото и видео</a></li>
@@ -50,7 +50,7 @@
             <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
             <img src="img/logo-mobile.svg" alt="Logo" width="120" height="84" class="logo header__logo">
           </picture>
-          <button type="button" class="burger header__burger" aria-label="Открыть меню">
+          <button type="button" class="burger header__burger js-burger" aria-label="Открыть меню">
             <span class="burger__item"></span>
             <span class="burger__item"></span>
             <span class="burger__item"></span>
@@ -59,7 +59,16 @@
       </div>
     </header>
   </div>
-  <script src="js/main.js?t=1643313404483"></script>
+  <script>
+    const burger = document.querySelector('.js-burger');
+    const body = document.querySelector('.js-body');
+    const nav = document.querySelector('.js-nav');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('_active');
+      // body.classList.toggle('_lock');
+      nav.classList.toggle('_active');
+    })
+  </script>
 </body>
 
 </html>
