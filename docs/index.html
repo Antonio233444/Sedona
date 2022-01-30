@@ -8,14 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1643394057098">
+  <link rel="stylesheet" href="css/main.css?t=1643561303100">
 </head>
 
 <body>
   <picture>
     <source media="(min-width: 1200px)" srcset="img/Desktop.jpg">
     <source media="(min-width: 768px)" srcset="img/Tablet.jpg">
-    <img class="test" src="img/Mobile.png" alt="">
+    <img class="test" src="img/Mobile1.jpg" alt="">
   </picture>
   <style>
     body {
@@ -61,11 +61,9 @@
   </div>
   <script>
     const burger = document.querySelector('.js-burger');
-    const body = document.querySelector('.js-body');
     const nav = document.querySelector('.js-nav');
     burger.addEventListener('click', () => {
       burger.classList.toggle('_active');
-      // body.classList.toggle('_lock');
       nav.classList.toggle('_active');
     })
   </script>
