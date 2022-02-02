@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1643561303100">
+  <link rel="stylesheet" href="css/main.css?t=1643825304290">
 </head>
 
 <body>
-  <picture>
+  <!-- <picture>
     <source media="(min-width: 1200px)" srcset="img/Desktop.jpg">
     <source media="(min-width: 768px)" srcset="img/Tablet.jpg">
     <img class="test" src="img/Mobile1.jpg" alt="">
@@ -32,7 +32,7 @@
       pointer-events: none;
       z-index: 1111;
     }
-  </style>
+  </style> -->
   <div class="wrapper">
     <header class="header">
       <div class="header__top">
@@ -48,7 +48,7 @@
           <picture>
             <source srcset="img/logo-desktop.svg" media="(min-width: 1024px)">
             <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-            <img src="img/logo-mobile.svg" alt="Logo" width="120" height="84" class="logo header__logo">
+            <img src="img/logo-mobile.svg" alt="Logo" width="102" height="82" class="logo header__logo">
           </picture>
           <button type="button" class="burger header__burger js-burger" aria-label="Открыть меню">
             <span class="burger__item"></span>
@@ -56,6 +56,9 @@
             <span class="burger__item"></span>
           </button>
         </div>
+      </div>
+      <div class="header__bottom">
+        <picture><source srcset="img/text-index.svg" type="image/webp"><img src="img/text-index.svg" width="282" height="209" class="header__bottom-text" alt="Заполнить"></picture>
       </div>
     </header>
   </div>
