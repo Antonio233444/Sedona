@@ -51,7 +51,7 @@
 
 .header__bottom {
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 104px;
     // background: url('../img/back-desktop.jpg') no-repeat bottom right/cover;
     background-image: image-set(
         url('../img/back-desktop.jpg') 1x,
@@ -71,16 +71,16 @@
 
 @media screen and(min-width: 768px) {
     .header__bottom {
-      padding-top: 77px;
-      padding-bottom: 91px;
+      padding-top: 139px;
+      padding-bottom: 168px;
     }
 }
 
 
 @media screen and(min-width: 1024px) {
     .header__bottom {
-      padding-top: 78px;
-      padding-bottom: 90px;
+      padding-top: 105px;
+      padding-bottom: 200px;
     }
 }
 
