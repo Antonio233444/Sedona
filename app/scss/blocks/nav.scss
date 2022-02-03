@@ -10,6 +10,7 @@
 
 .nav._active{
     display: block;
+    z-index: 105;
 }
 
 
@@ -99,7 +100,7 @@
 
 
 @media screen and(min-width: 1024px) {
-    
+
     .nav__item:last-child {
         margin-right: 0;
     }
