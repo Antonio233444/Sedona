@@ -1,6 +1,7 @@
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #fff;
 }
 
 .header__top {
@@ -99,4 +100,12 @@
     height: 57px;
     background: url('../img/intro-triangle.svg') no-repeat bottom center;
 }
+
+// @media screen and(min-width: 768px) {
+//   .header__bottom:after {
+//     display: none;
+//   }
+// }
+
+
 

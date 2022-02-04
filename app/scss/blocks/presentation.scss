@@ -1,0 +1,40 @@
+.presentation {
+  // background-color: #fff;
+  padding-top: 32px;
+  padding-bottom: 27px;
+}
+
+.presentation__text {
+  max-width: 285px;
+  margin: 0 auto;
+  text-align: center;
+  color: $title-color;
+  margin-bottom: 53px;
+  text-transform: uppercase;
+}
+
+.presentation__title {
+  margin-bottom: 30px;
+  @include font(21px, 26px, 700);
+}
+
+.presentation__description {
+  @include font(18px, 26px, 700);
+}
+
+@media screen and(min-width: 768px) {
+  .presentation__text {
+    max-width: 590px;
+    margin-bottom: 53px;
+  }
+}
+
+@media screen and(min-width: 1024px) {
+  .presentation__text {
+    max-width: 590px;
+    margin-bottom: 53px;
+  }
+}
+
+
+
