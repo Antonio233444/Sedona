@@ -1,5 +1,4 @@
 .presentation {
-  // background-color: #fff;
   padding-top: 32px;
   padding-bottom: 27px;
 }
@@ -14,12 +13,12 @@
 }
 
 .presentation__title {
-  margin-bottom: 30px;
+  margin-bottom: 42px;
   @include font(21px, 26px, 700);
 }
 
 .presentation__description {
-  @include font(18px, 26px, 700);
+  @include font(18px, 26px, 400);
 }
 
 @media screen and(min-width: 768px) {
