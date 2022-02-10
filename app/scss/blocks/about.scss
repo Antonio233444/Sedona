@@ -3,12 +3,12 @@
   background-color: $about-bg;
   color: $body-bg;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .about__description-title {
   margin-bottom: 20px;
   @include font(18px, 26px, 700);
-  text-transform: uppercase;
 }
 
 .about__description-count {
@@ -17,7 +17,7 @@
 }
 
 .about__description-text {
-  @include font(21px, 26px, 400);
+  @include font(18px,26px,400);
 }
 
 .about__image-pic {
