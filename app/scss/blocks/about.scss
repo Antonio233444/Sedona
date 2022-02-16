@@ -8,16 +8,16 @@
 
 }
 
+
 .about__description:before {
   content: ' ';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 57px;
-  background: url('../img/intro-triangle.svg') no-repeat bottom center;
+  height: 36px;
+  background: url('../img/white-copy.svg') no-repeat top center;
 }
-
 
 
 .about__description-title {
