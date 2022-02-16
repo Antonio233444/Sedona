@@ -4,17 +4,33 @@
   color: $body-bg;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+
 }
+
+.about__description:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 57px;
+  background: url('../img/intro-triangle.svg') no-repeat bottom center;
+}
+
+
 
 .about__description-title {
   margin-bottom: 20px;
   @include font(18px, 26px, 700);
 }
 
+
 .about__description-count {
   margin-bottom: 27px;
   @include font(21px, 15px, 400);
 }
+
 
 .about__description-text {
   @include font(18px,26px,400);
