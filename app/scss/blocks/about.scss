@@ -19,6 +19,13 @@
   background: url('../img/white-copy.svg') no-repeat top center;
 }
 
+@media screen and(min-width: 347px) {
+  .about__description:before {
+    display: none;
+  }
+}
+
+
 
 .about__description-title {
   margin-bottom: 20px;
