@@ -16,10 +16,11 @@
   left: 0;
   right: 0;
   height: 36px;
-  background: url('../img/white-copy.svg') no-repeat top center;
+  background: url('../img/decorative.svg') no-repeat top center;
 }
 
-@media screen and(min-width: 347px) {
+
+@media screen and(min-width: 768px) {
   .about__description:before {
     display: none;
   }
