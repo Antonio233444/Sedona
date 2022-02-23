@@ -30,18 +30,18 @@
 
 .about__description-title {
   margin-bottom: 20px;
-  @include font(18px, 26px, 700);
+  @include font(18px, 26px, 700 );
 }
 
 
 .about__description-count {
   margin-bottom: 27px;
-  @include font(21px, 15px, 400);
+  @include font(14px, 21px );
 }
 
 
 .about__description-text {
-  @include font(18px,26px,400);
+  @include font(14px, 21px );
 }
 
 .about__image-pic {
@@ -54,32 +54,12 @@
 
 @media screen and(min-width: 768px) {
   .about {
-    display: flex;
-  }
-
-
-  .about__description {
-    width: 40%;
-  }
-
-  .about__image {
-    width: 60%;
+    display: grid;
+    grid-template-columns: minmax(230px, 1fr) 2fr;
   }
 
 }
 
 
-@media screen and(min-width: 1024px) {
-  .about {
-    display: flex;
-  }
 
-  .about__description {
-    width: 40%;
-  }
-
-  .about__image {
-    width: 60%;
-  }
-}
 

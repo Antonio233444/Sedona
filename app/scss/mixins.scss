@@ -20,8 +20,9 @@
     }
 }
 
-@mixin desctop{
-    @media (max-width: $desctop){
+@mixin desktop{
+    @media (max-width: $desktop){
         @content;
     }
 }
+

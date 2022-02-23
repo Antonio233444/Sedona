@@ -10,30 +10,25 @@
   color: $title-color;
   margin-bottom: 53px;
   text-transform: uppercase;
-}
-
-.presentation__title {
-  margin-bottom: 42px;
-  @include font(21px, 26px, 700);
-}
-
-.presentation__description {
-  @include font(18px, 26px, 400);
-}
-
-@media screen and(min-width: 768px) {
-  .presentation__text {
+  @include tablet{
     max-width: 590px;
     margin-bottom: 53px;
   }
-}
-
-@media screen and(min-width: 1024px) {
-  .presentation__text {
+  @include desktop{
     max-width: 655px;
     margin-bottom: 53px;
   }
 }
+
+.presentation__title {
+  margin-bottom: 42px;
+  @include font(18px, 26px, 700);
+}
+
+.presentation__description {
+  @include font(14px, 26px, 400);
+}
+
 
 
 
