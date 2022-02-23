@@ -20,12 +20,11 @@
 }
 
 
-@media screen and(min-width: 768px) {
+@include tablet {
   .about__description:before {
     display: none;
   }
 }
-
 
 
 .about__description-title {
@@ -52,7 +51,7 @@
 }
 
 
-@media screen and(min-width: 768px) {
+@include tablet {
   .about {
     display: grid;
     grid-template-columns: minmax(230px, 1fr) 2fr;

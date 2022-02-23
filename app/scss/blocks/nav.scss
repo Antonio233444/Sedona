@@ -8,11 +8,11 @@
     display: none;
 }
 
+
 .nav._active{
     display: block;
     z-index: 105;
 }
-
 
 
 .nav__list {
@@ -20,6 +20,7 @@
     position: relative;
     width: 100%;
 }
+
 
 .nav__list:after {
     content: '';
@@ -66,7 +67,7 @@
 
 
 
-@media screen and(min-width: 768px) {
+@include tablet {
     .nav{
         display: flex;
         justify-content: center;
@@ -99,15 +100,14 @@
 }
 
 
-@media screen and(min-width: 1024px) {
-
+@include desktop {
     .nav__item:last-child {
         margin-right: 0;
     }
 }
 
 
-@media screen and(min-width: 768px) {
+@include tablet {
     .nav__list:after {
         background: none;
     }
