@@ -5,7 +5,8 @@
 }
 
 .info__item {
-  text-align: center
+  text-align: center;
+  position: relative;
 }
 
 
@@ -74,5 +75,16 @@
 
 .info__item:nth-child(2) .about__description:before {
   display: none;
+}
+
+
+.info__item:nth-child(3)::after, .info__item:nth-child(4)::after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 0;
+  height: 1px;
+  background-color: #D6D6D6;
 }
 
