@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  transition: color 0.2s linear;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  transition:  background-color .4s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.search__btn {
+  background-color: $button-bg;
+  padding: 14px 32px 17px 32px;
+  color: $body-bg;
+  width: 100%;
+  @include tablet {
+    max-width: 458px;
+  }
+  @include desktop {
+    max-width: 458px;
+  }
+}
+
+
+.search__btn:hover {
+  background-color: #669EC0;
+}
+
+
+// .search__btn:active {
+//   background-color: #5496BD;
+//   opacity: .3;
+// }

@@ -1,3 +1,8 @@
+.about {
+  display: grid;
+}
+
+
 .about__description {
   padding: 65px 12px 40px 13px;
   background-color: $about-bg;
@@ -5,7 +10,6 @@
   text-align: center;
   text-transform: uppercase;
   position: relative;
-
 }
 
 
@@ -53,7 +57,13 @@
 
 @include tablet {
   .about {
-    display: grid;
+    grid-template-columns: minmax(230px, 1fr) 2fr;
+  }
+
+}
+
+@include desktop {
+  .about {
     grid-template-columns: minmax(230px, 1fr) 2fr;
   }
 

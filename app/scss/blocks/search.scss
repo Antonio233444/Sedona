@@ -1,0 +1,32 @@
+.search {
+  padding: 33px 20px 49px 20px;
+  text-align: center;
+  @include tablet {
+    padding: 58px 166px 58px 155px;
+  }
+  @include desktop {
+    padding: 57px 371px 83px 371px;
+  }
+}
+
+
+.search__title {
+  @include font(21px, 26px, 700);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+
+.search__text {
+  @include font(14px, 24px);
+  text-transform: uppercase;
+  margin-bottom: 34px;
+  @include tablet {
+    text-transform: none;
+  }
+  @include desktop {
+    text-transform: none;
+  }
+}
+
+

@@ -1,0 +1,10 @@
+.footer {
+  padding: 24px 84px 28px 85px;
+  text-align: center;
+}
+
+.footer__title {
+  @include font(21px, 26px, 700);
+  margin-bottom: 18px;
+}
+
