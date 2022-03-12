@@ -8,3 +8,38 @@
   margin-bottom: 18px;
 }
 
+
+.footer__developer {
+  display: none;
+}
+
+
+@include tablet {
+  .footer__body {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+
+  .footer__developer {
+    display: block;
+  }
+
+  .footer__developer-body {
+    display: flex;
+    align-items: center
+  }
+
+  .footer__developer-text {
+    @include font(14px,26px);
+    text-transform: uppercase;
+  }
+
+  .footer__developer-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+
