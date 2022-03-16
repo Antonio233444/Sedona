@@ -6,18 +6,16 @@
 
 
 .info__item {
-  text-align: center;
   position: relative;
 }
 
 
 .info__item:nth-child(3), .info__item:nth-child(4), .info__item:nth-child(5) {
-  padding-top: 26px;
-  padding-right: 26px;
-  padding-bottom: 24px;
-  padding-left: 26px;
+  padding: 26px 26px 24px;
   background-color: $section-bg;
+  text-align: center;
 }
+
 
 @include tablet {
   .info__item:nth-child(3), .info__item:nth-child(4), .info__item:nth-child(5) {
@@ -27,6 +25,7 @@
     padding-left: 33px;
   }
 }
+
 
 @include desktop {
   .info__item:nth-child(3), .info__item:nth-child(4), .info__item:nth-child(5) {
@@ -40,6 +39,7 @@
 
 .info__item-title {
   @include font(18px, 26px,700);
+  text-transform: uppercase;
   margin-bottom: 21px;
 }
 
@@ -52,6 +52,7 @@
 
 .info__item-text {
   @include font(14px, 21px);
+  text-transform: uppercase;
 }
 
 
@@ -87,5 +88,12 @@
   bottom: 0;
   height: 1px;
   background-color: #D6D6D6;
+}
+
+
+@include tablet {
+  .info__item:nth-child(3)::after, .info__item:nth-child(4)::after {
+    display: none;
+  }
 }
 

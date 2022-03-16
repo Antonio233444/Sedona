@@ -1,11 +1,17 @@
 .footer {
-  padding: 24px 84px 28px 85px;
+  padding: 34px 84px 28px 84px;
   text-align: center;
 }
 
 .footer__title {
   @include font(21px, 26px, 700);
   margin-bottom: 18px;
+}
+
+@include tablet {
+  .footer__title {
+    margin-bottom: 0;
+  }
 }
 
 
@@ -33,6 +39,7 @@
   .footer__developer-text {
     @include font(14px,26px);
     text-transform: uppercase;
+    margin-right: 13px;
   }
 
   .footer__developer-icon {

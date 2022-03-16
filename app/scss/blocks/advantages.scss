@@ -1,70 +1,44 @@
 
 .advantages {
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 20px;
-    padding-right: 11px;
-    display: grid;
-    grid-row-gap: 19px;
-    grid-template-columns: repeat(1, 1fr);
-    list-style-type: none;
-}
-
-
-@include tablet {
-  .advantages {
+  padding: 35px 11px 35px 35px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  list-style-type: none;
+  @include mobile{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include tablet{
     grid-template-columns: repeat(3, 1fr);
-    padding-top: 63px;
-    padding-bottom: 59px;
-    padding-left: 36px;
-    padding-right: 31px;
+    padding: 63px 31px 59px 36px;
   }
-
-  .advantages__item {
-    flex-direction: column;
+  @include desktop{
+    padding: 59px 78px 80px 58px;
   }
-
-  }
-
-
-@include desktop {
-    .advantages {
-      grid-template-columns: repeat(3, 1fr);
-      padding-top: 59px;
-      padding-bottom: 80px;
-      padding-left: 58px;
-      padding-right: 78px;
-    }
-
-    .advantages__item {
-      justify-content: center;
-      align-items: center;
-    }
-
-    .advantages__icon-pic {
-      margin-bottom: 27px;
-    }
-
-    .advantages__item-description {
-      text-align: center;
-    }
-  }
-
-
-.advantages__item {
-  display: flex;
 }
 
+.advantages__item-title {
+  @include font(18px,26px, 700);
+  color: $title-color;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.advantages__item-text {
+  @include font(14px,21px);
+  color: $text-color;
+}
 
 .advantages__icon-pic {
   width: 40px;
   height: 40px;
-  display: block;
+  display: inline-block;
   margin-right: 10px;
   @include tablet {
     width: 72px;
     height: 72px;
     margin-right: 0;
+    margin-bottom: 27px;
   }
   @include desktop {
     width: 72px;
@@ -73,20 +47,21 @@
   }
 }
 
-
-.advantages__item-title {
-  @include font(21px, 26px, 700);
-  margin-bottom: 16px;
-  text-transform: uppercase;
-}
-
-
 .advantages__item-text {
-  @include font(14px ,21px );
+  @include font(14px ,21px);
   max-width: 200px;
+   @include tablet {
+     max-width: none;
+   }
 }
 
-
+.advantages__item {
+  display: flex;
+  @include tablet {
+    display: block;
+    text-align: center;
+  }
+}
 
 
 

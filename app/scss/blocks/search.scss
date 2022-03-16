@@ -21,12 +21,6 @@
   @include font(14px, 24px);
   text-transform: uppercase;
   margin-bottom: 34px;
-  @include tablet {
-    text-transform: none;
-  }
-  @include desktop {
-    text-transform: none;
-  }
 }
 
 

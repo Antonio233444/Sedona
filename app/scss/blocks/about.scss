@@ -3,6 +3,8 @@
 }
 
 
+
+
 .about__description {
   padding: 65px 12px 40px 13px;
   background-color: $about-bg;
@@ -60,14 +62,23 @@
     grid-template-columns: minmax(230px, 1fr) 2fr;
   }
 
-}
-
-@include desktop {
-  .about {
-    grid-template-columns: minmax(230px, 1fr) 2fr;
+  .about--reverse {
+    grid-template-columns: 2fr minmax(230px, 1fr);
   }
 
 }
+
+
+
+// @include desktop {
+//   .about {
+//     grid-template-columns: minmax(230px, 1fr) 2fr;
+//   }
+
+// }
+
+
+
 
 
 
