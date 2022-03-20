@@ -20,6 +20,8 @@
 }
 
 
+
+
 @include tablet {
   .footer__body {
    display: flex;
@@ -45,6 +47,15 @@
   .footer__developer-icon {
     width: 30px;
     height: 30px;
+    cursor: pointer;
+  }
+
+  .footer__developer-icon:hover {
+    stroke: #81B3D2;
+  }
+
+  .footer__developer-icon:active {
+
   }
 }
 

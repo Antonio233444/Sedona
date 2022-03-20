@@ -4,15 +4,32 @@
   grid-column-gap: 6px;
 }
 
+
 .socials__item {
   background-color: $socials-bg;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 17px 13px 17px 13px;
+  padding: 16px 18px 16px 18px;
 }
+
+
+.socials__item:hover {
+  background-color: $hover-socials-bg;
+}
+
+.socials__item:active {
+  background-color: $active-socials-bg;
+}
+
 
 .socials__item-icon {
   width: 20px;
   height: 20px;
 }
+
+.socials__item-icon:active {
+  opacity: .3;
+}
+
+

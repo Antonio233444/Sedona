@@ -37,6 +37,7 @@
     width: 100%;
 }
 
+
 .nav__item:not(:last-child)::before {
     content: '';
     position: absolute;
@@ -46,7 +47,6 @@
     bottom: 0;
     background: linear-gradient(rgba(#010101, .2) 50% , rgba(#ffffff, .2) 50%);
 }
-
 
 
 .nav__link {
@@ -62,9 +62,12 @@
 }
 
 .nav__link:hover {
-    opacity: .6;
+  color: #81B3D2;
 }
 
+.nav__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
 
 @include tablet {

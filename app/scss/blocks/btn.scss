@@ -9,7 +9,7 @@
   border-radius: 0;
   box-shadow: none;
   text-align: center;
-  transition:  background-color .4s ease;
+  transition:  all .4s ease;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -35,7 +35,13 @@
 }
 
 
-// .search__btn:active {
-//   background-color: #5496BD;
-//   opacity: .3;
-// }
+.search__btn:active {
+  background-color: #5496BD;
+  color: rgba(255,255,255,.3);
+  box-shadow: 0 0 0 1px #000;
+}
+
+
+.search__btn:disabled {
+  background-color: $disabled-color;
+}
