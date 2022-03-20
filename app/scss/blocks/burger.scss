@@ -51,18 +51,6 @@
 }
 
 
-.burger:hover {
-  background-color: transparent;
-  opacity: .6;
-}
-
-
-// .burger:active {
-//   background-color: transparent;
-//   opacity: .3;
-// }
-
-
 .burger._active .burger__item {
     background-color: $primary-color;
     z-index: 110;
