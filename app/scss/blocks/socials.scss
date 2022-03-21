@@ -19,6 +19,11 @@
 }
 
 
+.socials__link:active > .socials__item-icon {
+  opacity: .3;
+}
+
+
 .socials__item:hover {
   background-color: $hover-socials-bg;
 }
@@ -33,8 +38,6 @@
   height: 20px;
 }
 
-.socials__item-icon:active {
-  opacity: .3;
-}
+
 
 
