@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- <picture>
+    <source media="(min-width: 1200px)" srcset="img/Desktop.jpg">
+    <source media="(min-width: 768px)" srcset="img/Tablet.jpg">
+    <img class="test" src="img/Mobile1.jpg" alt="">
+  </picture>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    .test {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 0;
+      transform: translateX(-50%);
+      opacity: .9;
+      pointer-events: none;
+      z-index: 1111;
+    }
+  </style> -->
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <div class="container header__container">
+          <nav class="nav header__nav js-nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Фото и видео</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Форма отзыва</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">HTMLACADEMY</a></li>
+            </ul>
+          </nav>
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1024px)">
+            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+            <img src="img/logo-mobile.svg" alt="Logo" width="102" height="82" class="logo header__logo">
+          </picture>
+          <button type="button" class="burger header__burger js-burger" aria-label="Открыть меню">
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+          </button>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <img src="img/sedona-logo.svg" width="229" height="39" class="header__bottom-text header__bottom--inner"
+          alt="Заполнить">
+      </div>
+    </header>
+    <section class="feedback">
+      <h1 class="feedback__title">Оставьте свой отзыв</h1>
+      <p class="feedback__description">Помогите нашим отелям стать лучше!Оставьте отзыв о них,а так же о посещенных вами
+        достопримечательностях</p>
+    </section>
+    <div class="opinion opinion--offset">
+      <article class="introduction introduction--offset">
+        <h2 class="introduction__title">Представьтесь:</h2>
+        <form action="#" class="introduction__form" method="get">
+          <div class="introduction__row">
+            <label for="name" class="introduction__label">Имя*:</label>
+            <input type="text" id="name" placeholder="Пётр" class="introduction__input introduction__input--name">
+          </div>
+          <div class="introduction__row">
+            <label for="secondname" class="introduction__label">Фамилия*:</label>
+            <input type="text" id="secondname" placeholder="Иванов"
+              class="introduction__input introduction__input--secondname">
+          </div>
+          <div class="introduction__row">
+            <label for="surname" class="introduction__label">Отчество:</label>
+            <input type="text" id="surname" placeholder="Александрович"
+              class="introduction__input introduction__input--surname">
+          </div>
+        </form>
+      </article>
+      <article class="impression impression--offset">
+        <h2 class="impression__title">Ваше общее впечатление:</h2>
+        <form action="#" method="get" class="impression__form">
+          <div class="impression__row">
+            <label class="impression__label">
+              <input type="radio" name="impression__radio" value="Скорее положительное" class="impression__radio"
+                checked>
+              <span class="impression__custom"></span>
+              <span class="impression__custom-text"> Скорее положительное</span>
+            </label>
+          </div>
+          <div class="impression__row">
+            <label class="impression__label">
+              <input type="radio" name="impression__radio" value="Скорее отрицательное" class="impression__radio">
+              <span class="impression__custom"></span>
+              <span class="impression__custom-text"> Скорее отрицательное</span>
+            </label>
+          </div>
+          <div class="impression__row">
+            <label class="impression__label">
+              <input type="radio" name="impression__radio" value="Затрудняюсь ответить" class="impression__radio">
+              <span class="impression__custom"></span>
+              <span class="impression__custom-text"> Затрудняюсь ответить</span>
+            </label>
+          </div>
+        </form>
+      </article>
+    </div>
+  </div>
+  <script>
+    const burger = document.querySelector('.js-burger');
+    const nav = document.querySelector('.js-nav');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('_active');
+      nav.classList.toggle('_active');
+    })
+  </script>
+</body>
+
+</html>

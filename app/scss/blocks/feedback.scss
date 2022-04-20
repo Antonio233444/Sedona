@@ -1,0 +1,47 @@
+.feedback {
+  padding: 56px 6px 16px 8px;
+  text-align: center;
+  position: relative;
+}
+
+
+.feedback__title {
+  margin-bottom: 40px;
+  @include font(18px, 26px, 700);
+  color: $title-color;
+  text-transform: uppercase;
+}
+
+
+.feedback__description {
+  @include font(14px, 24px);
+  color: $text-color;
+  text-transform: uppercase;
+  max-width: 306px;
+  margin: 0 auto;
+}
+
+
+.feedback:after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: #D6D6D6;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+@include tablet {
+  .feedback:after {
+    display: none;
+  }
+}
+
+@include desktop {
+  .feedback:after {
+    display: none;
+  }
+}
+

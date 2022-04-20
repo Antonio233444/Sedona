@@ -1,0 +1,70 @@
+.impression--offset {
+  padding: 20px 7px 31px 24px;
+}
+
+.impression__title {
+  @include font(18px, 26px, 700);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+.impression__row {
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+
+.impression__label {
+  @include font(18px, 26px, 700);
+  margin-bottom: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.impression__radio {
+  margin-right: 26px;
+  display: none;
+}
+
+
+.impression__custom {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $input-bg;
+  position: relative;
+  margin-right: 26px;
+}
+
+
+.impression__custom:before {
+  content: ' ';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $input-checked-bg;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  transition: all .2 ease;
+}
+
+
+.impression__radio:checked + .impression__custom:before {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
