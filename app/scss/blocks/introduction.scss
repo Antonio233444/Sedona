@@ -7,25 +7,28 @@
 .introduction--offset:after {
   content: '';
   position: absolute;
-  height: 1px;
   background-color: #D6D6D6;
-  left: 0;
-  right: 0;
-  bottom: 20px;
+  // height: 1px;
+  // left: 0;
+  // right: 0;
+  // bottom: 20px;
 }
 
 
-@include desktop {
+@include tablet {
   .introduction--offset:after {
     content: '';
     position: absolute;
     top: 0;
     right: -18px;
     bottom: 0;
-    width: 1px;
-    background-color: #D6D6D6
+    width: 1px;background-color: #D6D6D6;
+    height: auto;
+    left: auto;
   }
 }
+
+
 
 
 .introduction__title {
