@@ -2,6 +2,7 @@
   padding: 20px 7px 31px 24px;
 }
 
+
 .impression__title {
   @include font(18px, 26px, 700);
   text-transform: uppercase;
@@ -12,7 +13,7 @@
 
 .impression__row {
   margin-bottom: 21px;
-  text-align: center;
+  // text-align: center;
 }
 
 
@@ -26,7 +27,7 @@
 
 
 .impression__radio {
-  margin-right: 26px;
+  // margin-right: 26px;
   display: none;
 }
 

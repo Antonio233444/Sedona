@@ -1,0 +1,67 @@
+.visited--offset {
+  padding: 15px 26px 30px 24px;
+}
+
+
+.visited__title {
+  @include font(18px, 26px, 700);
+  text-transform: uppercase;
+  max-width: 268px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+
+.visited__row {
+  margin-bottom: 34px;
+}
+
+
+.visited__label {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+}
+
+
+.visited__checkbox {
+  display: none;
+}
+
+
+.visited__custom {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background-color: $input-bg;
+  margin-right: 29px;
+  position: relative;
+}
+
+
+.visited__custom-text {
+  @include font(18px, 26px, 700);
+}
+
+
+.visited__custom:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  left: 38%;
+  top: 18%;
+  opacity: 0;
+  transition: all .2 ease;
+}
+
+
+.visited__checkbox:checked + .visited__custom:before {
+  opacity: 1;
+}
+
+

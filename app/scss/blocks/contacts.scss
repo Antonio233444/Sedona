@@ -11,6 +11,10 @@
   position: relative;
 }
 
+// .contacts__title:after, .contacts__title:before {
+//   display: none;
+// } /*не работает*/
+
 
 .contacts__title:before {
   content: '';
@@ -52,7 +56,7 @@
 
 
 @include desktop {
-  .contacts__title:after {
+  .contacts__title:before {
     content: '';
     position: absolute;
     height: 1px;
