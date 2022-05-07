@@ -1,4 +1,4 @@
-.feedback {
+.feedback--offset {
   padding: 56px 6px 16px 8px;
   text-align: center;
   position: relative;
@@ -22,7 +22,7 @@
 }
 
 
-.feedback:after {
+.feedback--offset:after {
   content: '';
   position: absolute;
   height: 1px;

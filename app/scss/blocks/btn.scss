@@ -45,3 +45,18 @@
 .search__btn:disabled {
   background-color: $disabled-color;
 }
+
+
+.message__btn {
+  @include font(21px, 26px);
+  padding: 18px 33px 14px 32px;
+  color: $primary-color;
+  background-color: $socials-bg;
+  width: 100%;
+  @include tablet {
+    max-width: 324px;
+  }
+  @include desktop {
+    max-width: 480px;
+  }
+}

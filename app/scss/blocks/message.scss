@@ -1,0 +1,50 @@
+.message--offset {
+  padding: 20px 22px 51px 19px;
+}
+
+
+.message__title {
+  @include font(18px, 26px, 700);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+
+.message__block {
+  display: flex;
+  @include tablet {
+    justify-content: space-between;
+  }
+  @include desktop {
+    justify-content: space-between;
+  }
+}
+
+
+
+
+.message__form {
+
+}
+
+
+.message__input {
+  width: 100%;
+  height: 160px;
+  background-color: $input-bg;
+  outline: none;
+  border: none;
+  padding: 13px 23px 29px 21px;
+  margin-bottom: 51px;
+}
+
+
+.message__text {
+  @include font(14px, 26px);
+  text-transform: uppercase;
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
